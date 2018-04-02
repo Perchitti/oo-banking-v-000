@@ -25,7 +25,7 @@ def execute_transaction
 end
 
 def reverse_transfer
-  if valid? && reciever.balance > amount && self.status == "completed"
+  if valid? && reciever.balance > amount && self.status == "complete"
     receiver.balance -= amount
     sender.balance += amount
     self.status = "reversed"
