@@ -9,3 +9,7 @@ attr_accessor :sender, :receiver, :status, :transfer_amount
     @status = status
     @transfer_amount = transfer_amount
 end
+
+
+
+end
